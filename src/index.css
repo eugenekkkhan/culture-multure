@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 /* Colors */
 @theme {
   --color-brown-100: #E4E0E1;
@@ -7,5 +8,19 @@
   --color-brown-300: #AB886D;
   --color-brown-350: #735540;
   --color-brown-400: #493628;
+  --color-brown-400-alpha: #49362880;
   --color-gold: #E6C494;
+}
+
+@keyframes appearing {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.appear {
+  animation: appearing 1000ms forwards;
 }

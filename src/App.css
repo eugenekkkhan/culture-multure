@@ -1,3 +1,33 @@
 #root {
   margin: 0 auto;
+  font-family: "Tinos", serif;
+}
+
+p {
+  margin: 0;
+  line-height: 120%;
+}
+ul {
+  list-style: inside;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  line-height: 120%;
+}
+
+li span {
+  position: relative;
+  left:-10px;
+}
+
+.tinos-regular {
+	font-family: "Tinos", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.tinos-bold {
+	font-family: "Tinos", serif;
+	font-weight: 700;
+	font-style: normal;
 }

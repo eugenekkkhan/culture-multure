@@ -25,7 +25,7 @@ const Gallery = () => {
   });
 
   return (
-    <div ref={divRef} className="text-white h-[100px] overflow-x-clip">
+    <div ref={divRef} className="text-white h-full overflow-x-clip">
       <p className="text-[48px] px-[48px] py-[48px]">
         Галерея
       </p>

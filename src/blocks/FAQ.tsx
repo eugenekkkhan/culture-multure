@@ -40,10 +40,10 @@ const FAQ = () => {
   w-full 
   py-[48px] h-full flex-col text-gold
   ">
-    <h2 className="text-[48px] font-bold top-[48px]">Часто задаваемые вопросы</h2>
-    <div className="flex flex-col w-[calc(100vw-200px)]
+    <h2 className="text-[48px] font-bold top-[48px] text-center p-[18px]">Часто задаваемые вопросы</h2>
+    <div className="flex flex-col px-[18px] md:w-[720px] mx-[18px]
      bg-gold text-brown-400 
-     text-[24px] px-[18px] rounded-[12px]">
+     text-[24px] rounded-[12px]">
       {hardCodeData.map((el, i) => 
       <QuestionElement 
         question={el.question}

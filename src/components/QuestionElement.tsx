@@ -13,7 +13,8 @@ const QuestionElement = ({ question, answer, isLast = false }: Props) => {
     <div className='pt-[18px]'>
       <div 
       className="text-[24px] font-bold 
-      flex flex-row items-center justify-between mb-[18px]">
+      flex flex-row items-center gap-[18px]
+      justify-between mb-[18px]">
         <p>{question}</p>
         <div onClick={()=>setIsOpened(prev=>!prev)} 
         className='rounded-full bg-brown-400 text-gold 

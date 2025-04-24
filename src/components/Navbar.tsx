@@ -1,71 +1,83 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../assets/logo-loft-km.svg";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
+
   return (
     <div className="z-20 bg-linear-to-b from-brown-400-alpha to-transparent fixed w-[calc(100vw-(100vw-100%))] px-[18px] md:px-[48px] py-[18px] gap-[18px] flex justify-between items-center">
-      <img src={Logo} className="w-[134px] h-[40px] " />
+      <Link
+        to="about"
+        smooth={true}
+        duration={500}
+        className="cursor-pointer transition-all"
+        activeClass="opacity-0 transition-all"
+        spy={true}
+        offset={-100}
+      >
+        <img src={Logo} className="w-[134px] h-[40px] " />
+      </Link>
       <div className="hidden md:flex text-white justify-between gap-[calc(8vw-56px)]">
-        <Link 
-          to="about" 
-          smooth={true} 
-          duration={500} 
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
           className="cursor-pointer transition-all"
           activeClass="text-gold"
           spy={true}
-       >
+
+        >
           О нас
         </Link>
-        <Link 
-          to="gallery" 
-          smooth={true} 
-          duration={500} 
+        <Link
+          to="gallery"
+          smooth={true}
+          duration={500}
           activeClass="text-gold"
           className="cursor-pointer transition-all"
           spy={true}
         >
           Галерея
         </Link>
-        <Link 
-          to="price" 
-          smooth={true} 
-          duration={500} 
-          className="cursor-pointer transition-all" 
-          activeClass="text-gold" 
+        <Link
+          to="price"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer transition-all"
+          activeClass="text-gold"
           spy={true}
-       >
+        >
           Прайс
         </Link>
-        <Link 
-          to="reviews" 
-          smooth={true} 
+        <Link
+          to="reviews"
+          smooth={true}
           duration={500}
           activeClass="text-gold"
           className="cursor-pointer transition-all"
           spy={true}
-        > 
+        >
           Отзывы
         </Link>
-        <Link 
-          to="faq" 
-          smooth={true} 
-          duration={500} 
-          activeClass="text-gold"
-          className="cursor-pointer transition-all"
-          spy={true}
-        > 
-          FAQ
-        </Link>
-        <Link 
-          to="contacts" 
-          smooth={true} 
+        <Link
+          to="faq"
+          smooth={true}
           duration={500}
           activeClass="text-gold"
           className="cursor-pointer transition-all"
           spy={true}
-        > 
+        >
+          FAQ
+        </Link>
+        <Link
+          to="contacts"
+          smooth={true}
+          duration={500}
+          activeClass="text-gold"
+          className="cursor-pointer transition-all"
+          spy={true}
+        >
           Контакты
         </Link>
       </div>

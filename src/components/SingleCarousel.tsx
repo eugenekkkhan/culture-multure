@@ -21,7 +21,6 @@ const SingleCarousel = ({ Img1, Img2, Img3, Img4, posY, offset = 0, direction = 
 
   return (
     <div className="relative h-[480px]">
-      {posX}
       <div className="absolute px-[48px] flex gap-[48px] overflow-clip" style={{ left: (direction ? -360-posX : posX) +'px' }}>
         <img className="w-[360px] h-[480px] rounded-[4px]" src={Img1} alt="" />
         <img className="w-[360px] h-[480px] rounded-[4px]" src={Img2} alt="" />

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import useGetCurrScrollY from "../custom-hooks/useGetCurrScrollY";
 
 const BgComponent = () => {

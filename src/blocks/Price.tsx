@@ -4,10 +4,10 @@ const Price = () => {
   return (
     <div className="
     flex items-center justify-center relative gap-10
-    w-full md:h-screen md:flex-row md:py-0
-    py-[48px] h-full flex-col  bg-brown-400 text-gold
+    w-full h-screen md:flex-row md:py-0
+    py-[48px] flex-col  bg-brown-400 text-gold
     ">
-      <h2 className="text-[48px] font-bold md:absolute top-[48px]">Прайс</h2>
+      <h2 className="text-[48px] font-bold absolute top-[48px]">Прайс</h2>
       <div className="flex flex-col  items-center w-[348px]">
         <MdEventAvailable size={"90px"} />
         <h3 className="text-[48px] text-center">Мероприятие</h3>
@@ -21,7 +21,7 @@ const Price = () => {
           </li>
         </ul>
       </div>
-      <span className="w-[1px] h-[400px] bg-gold absolute hidden md:block"></span>
+      <span className="w-[1px] h-[40%]  bg-gold absolute hidden md:block"></span>
       <span className="w-[80vw] h-[1px] bg-gold md:hidden block"></span>
       <div className="flex flex-col  items-center w-[348px]">
         <MdOutlineCleaningServices size={"90px"} />

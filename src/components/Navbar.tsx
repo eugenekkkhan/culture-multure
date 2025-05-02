@@ -4,16 +4,16 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
-  
+
   return (
     <div className="z-20 bg-linear-to-b from-brown-400-alpha to-transparent fixed w-[calc(100vw-(100vw-100%))] px-[18px] md:px-[48px] py-[18px] gap-[18px] flex justify-between items-center">
       <Link
         to="about"
-        smooth={true}
+        smooth
         duration={500}
         className="cursor-pointer transition-all"
         activeClass="opacity-0 transition-all"
-        spy={true}
+        spy
         offset={-100}
       >
         <img src={Logo} className="w-[134px] h-[40px] " />
@@ -21,62 +21,62 @@ const Navbar = () => {
       <div className="hidden md:flex text-white justify-between gap-[calc(8vw-56px)]">
         <Link
           to="about"
-          smooth={true}
+          smooth
           duration={500}
           className="cursor-pointer transition-all"
           activeClass="text-gold"
-          spy={true}
+          spy
 
         >
           О нас
         </Link>
         <Link
           to="gallery"
-          smooth={true}
+          smooth
           duration={500}
           activeClass="text-gold"
           className="cursor-pointer transition-all"
-          spy={true}
+          spy
         >
           Галерея
         </Link>
         <Link
           to="price"
-          smooth={true}
+          smooth
           duration={500}
           className="cursor-pointer transition-all"
           activeClass="text-gold"
-          spy={true}
+          spy
         >
           Прайс
         </Link>
         <Link
           to="reviews"
-          smooth={true}
+          smooth
           duration={500}
           activeClass="text-gold"
           className="cursor-pointer transition-all"
-          spy={true}
+          spy
         >
           Отзывы
         </Link>
         <Link
           to="faq"
-          smooth={true}
+          smooth
           duration={500}
           activeClass="text-gold"
           className="cursor-pointer transition-all"
-          spy={true}
+          spy
         >
           FAQ
         </Link>
         <Link
           to="contacts"
-          smooth={true}
+          smooth
           duration={500}
           activeClass="text-gold"
           className="cursor-pointer transition-all"
-          spy={true}
+          spy
         >
           Контакты
         </Link>

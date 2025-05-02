@@ -15,7 +15,7 @@ const Contacts = () => {
         >
           <Placemark defaultGeometry={[50.983108, 39.480831]} />
         </Map>
-        <div className="bg-brown-400 text-gold text-[24px] md:flex-1/2 md:h-screen flex h-[400px] items-center justify-center">
+        <div className="bg-brown-400 text-gold text-[24px] md:flex-1/2 md:h-screen flex h-[500px] items-center justify-center">
           <div className="flex flex-col gap-[24px]">
             <h2 className="text-[48px] font-bold">Контакты</h2>
             <p>

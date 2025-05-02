@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
-
+  
   return (
     <div className="z-20 bg-linear-to-b from-brown-400-alpha to-transparent fixed w-[calc(100vw-(100vw-100%))] px-[18px] md:px-[48px] py-[18px] gap-[18px] flex justify-between items-center">
       <Link

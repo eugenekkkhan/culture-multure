@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Logo from "../assets/logo-loft-km.svg";
 import { Link } from "react-scroll";
+import LinkBar from "./LinkBar";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -19,68 +20,19 @@ const Navbar = () => {
         <img src={Logo} className="w-[134px] h-[40px] " />
       </Link>
       <div className="hidden md:flex text-white justify-between gap-[calc(8vw-56px)]">
-        <Link
-          to="about"
-          smooth
-          duration={500}
-          className="cursor-pointer transition-all"
-          activeClass="text-gold"
-          spy
-
-        >
-          О нас
-        </Link>
-        <Link
-          to="gallery"
-          smooth
-          duration={500}
-          activeClass="text-gold"
-          className="cursor-pointer transition-all"
-          spy
-        >
-          Галерея
-        </Link>
-        <Link
-          to="price"
-          smooth
-          duration={500}
-          className="cursor-pointer transition-all"
-          activeClass="text-gold"
-          spy
-        >
-          Прайс
-        </Link>
-        <Link
-          to="reviews"
-          smooth
-          duration={500}
-          activeClass="text-gold"
-          className="cursor-pointer transition-all"
-          spy
-        >
-          Отзывы
-        </Link>
-        <Link
-          to="faq"
-          smooth
-          duration={500}
-          activeClass="text-gold"
-          className="cursor-pointer transition-all"
-          spy
-        >
-          FAQ
-        </Link>
-        <Link
-          to="contacts"
-          smooth
-          duration={500}
-          activeClass="text-gold"
-          className="cursor-pointer transition-all"
-          spy
-        >
-          Контакты
-        </Link>
+        <LinkBar />
       </div>
+      <div className={isActive ? 
+        "md:hidden h-screen w-[100px] bg-brown-400-alpha right-[0px] top-[0px] absolute transition-all":
+        "md:hidden h-screen w-[100px] bg-brown-400 -right-[100px] top-[0px] absolute transition-all"
+      } />
+      <div className={
+        isActive ? "md:hidden flex flex-col text-white text-right justify-between absolute right-[18px] top-[54px] transition-all" 
+        :          "md:hidden flex flex-col text-white text-right justify-between absolute -right-[96px] top-[54px] transition-all"
+      }>
+        <LinkBar />
+      </div>
+      
       <div className="hidden md:block">
         <button className="cursor-pointer transition bg-gold hover:bg-brown-300 text-brown-400 px-[36px] py-[8px] rounded-[4px]">
           Забронировать
@@ -112,6 +64,7 @@ const Navbar = () => {
           }
         ></span>
       </div>
+      
     </div>
   );
 };

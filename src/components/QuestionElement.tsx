@@ -15,7 +15,7 @@ const QuestionElement = ({ question, answer, isLast = false }: Props) => {
       className="text-[24px] font-bold 
       flex flex-row items-center gap-[18px]
       justify-between mb-[18px]">
-        <p>{question}</p>
+        <p className='cursor-pointer' onClick={()=>setIsOpened(prev=>!prev)}>{question}</p>
         <div onClick={()=>setIsOpened(prev=>!prev)} 
         className='rounded-full bg-brown-400 text-gold 
         w-[24px] h-[24px] flex items-center justify-center cursor-pointer 

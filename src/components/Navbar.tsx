@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Logo from "../assets/logo-loft-km.svg";
 import { Link } from "react-scroll";
 import LinkBar from "./LinkBar";
+import useGetCurrScrollY from "../custom-hooks/useGetCurrScrollY";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
+  
+  const posY = useGetCurrScrollY();
 
   return (
     <div className="z-20 bg-linear-to-b from-brown-400-alpha to-transparent fixed w-[calc(100vw-(100vw-100%))] px-[18px] md:px-[48px] py-[18px] gap-[18px] flex justify-between items-center">
@@ -12,12 +15,12 @@ const Navbar = () => {
         to="about"
         smooth
         duration={500}
-        className="cursor-pointer transition-all"
+        className={posY <= 1 ? "opacity-0 transition-all" : "cursor-pointer transition-all"}
         activeClass="opacity-0 transition-all"
         spy
         offset={-100}
       >
-        <img src={Logo} className="w-[134px] h-[40px] " />
+        <img src={Logo} className="w-[134px] h-[40px]" />
       </Link>
       <div className="hidden md:flex text-white justify-between gap-[calc(8vw-56px)]">
         <LinkBar />

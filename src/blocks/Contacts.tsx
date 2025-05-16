@@ -1,4 +1,3 @@
-import React from "react";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 import { FaTelegram, FaVk, FaWhatsapp } from "react-icons/fa6";
 

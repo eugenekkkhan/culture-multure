@@ -1,4 +1,3 @@
-import React from 'react'
 import QuestionElement from '../components/QuestionElement';
 
 type FAQData = { 
@@ -6,7 +5,7 @@ type FAQData = {
   answer: string;
 }
 
-const hardCodeData = [
+const hardCodeData: FAQData[] = [
   {
     question: "Какой срок выполнения заказа?",
     answer: "Срок выполнения заказа зависит от сложности работы и объема. Обычно это занимает от 1 до 3 дней."

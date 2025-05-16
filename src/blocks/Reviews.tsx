@@ -51,6 +51,7 @@ const Reviews = () => {
       </div>
       <div className="flex gap-2">
         {ReviewList.map((el, i) => {
+          el
           return (
             <div
               className={currentReview === i ? "w-[10px] h-[10px] rounded-full transition-all bg-brown-400 my-2" :

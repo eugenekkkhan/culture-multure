@@ -4,7 +4,7 @@ import LogoLoft from "./LogoLoft";
 const Footer = () => {
   return (
     <div className="bg-gold text-brown-400 text-[24px] flex md:items-center items-start md:flex-row flex-col gap-[24px] md:justify-center fill-brown-400 p-[48px]">
-      <LogoLoft className="fill-brown-400 flex-1 w-full" />
+      <LogoLoft className="md:fill-brown-400 fill-brown-400-alpha flex-1 w-full" />
       <div className="flex md:flex-row flex-col flex-1 items-start justify-center md:gap-[64px] gap-[24px]">
         <div className="flex flex-col text-[24px]">
           <h3 className="text-[36px]">Карта сайта</h3>

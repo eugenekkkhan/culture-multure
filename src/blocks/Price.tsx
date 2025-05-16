@@ -7,7 +7,7 @@ const Price = () => {
     w-full h-screen md:flex-row md:py-0
     py-[48px] flex-col  bg-brown-400 text-gold
     ">
-      <h2 className="text-[48px] font-bold absolute top-[48px]">Прайс</h2>
+      <h2 className="text-[48px] font-bold absolute top-[18px] md:top-[48px]">Прайс</h2>
       <div className="flex flex-col  items-center w-[348px]">
         <MdEventAvailable size={"90px"} />
         <h3 className="text-[48px] text-center">Мероприятие</h3>

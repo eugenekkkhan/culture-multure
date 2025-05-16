@@ -6,8 +6,12 @@ import FAQ from "./blocks/FAQ";
 import Contacts from "./blocks/Contacts";
 import Price from "./blocks/Price";
 import { Element } from "react-scroll";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(()=>{
+    window.scrollTo(0, 1);
+  },[])
   return (
     <div className="z-20">
       <Element name="about">

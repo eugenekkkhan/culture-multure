@@ -8,7 +8,7 @@ const AboutUs = () => {
       lg:gap-[120px] items-center justify-center"
     >
       <div className="p-[36px]">
-        <div className="scale-[1.6] lg:scale-[1.4] flex items-center justify-center">
+        <div className="scale-[1.3] lg:scale-[1.4] flex items-center justify-center">
           <AnimatedLogoComponent />
         </div>
       </div>

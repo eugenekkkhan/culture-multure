@@ -3,10 +3,11 @@ import AboutUs from "./blocks/AboutUs";
 import Gallery from "./blocks/Gallery";
 import Reviews from "./blocks/Reviews";
 import FAQ from "./blocks/FAQ";
-import Contacts from "./blocks/Contacts";
 import Price from "./blocks/Price";
 import { Element } from "react-scroll";
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
+
+const Contacts = lazy(() => import("./blocks/Contacts"));
 
 function App() {
   useEffect(()=>{
@@ -30,7 +31,9 @@ function App() {
         <FAQ />
       </Element>
       <Element name="contacts">
-        <Contacts />
+        <Suspense fallback={<div className="md:h-screen h-[40vh]" />}>
+          <Contacts />
+        </Suspense>
       </Element>
     </div>
   );

@@ -20,7 +20,7 @@ const Navbar = () => {
         spy
         offset={-100}
       >
-        <img src={Logo} className="w-[134px] h-[40px]" />
+        <img src={Logo} alt="LOFT Культур Мультур" width={134} height={40} className="w-[134px] h-[40px]" />
       </Link>
       <div className="hidden md:flex text-white justify-between gap-[calc(8vw-56px)]">
         <LinkBar />

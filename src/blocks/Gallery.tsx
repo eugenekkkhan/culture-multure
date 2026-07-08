@@ -1,8 +1,8 @@
 import SingleCarousel from "../components/SingleCarousel";
-import six from "../assets/6.jpg";
-import seven from "../assets/7.jpg";
-import eight from "../assets/8.jpg";
-import nine from "../assets/9.jpg";
+import six from "../assets/6.webp";
+import seven from "../assets/7.webp";
+import eight from "../assets/8.webp";
+import nine from "../assets/9.webp";
 
 const Gallery = () => {
 

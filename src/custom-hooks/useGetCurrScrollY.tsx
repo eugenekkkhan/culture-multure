@@ -4,11 +4,18 @@ const useGetCurrScrollY = (initValue: number = 0) => {
   const [posY, setPosY] = useState(0);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      setPosY(window.scrollY);
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setPosY(window.scrollY);
+        ticking = false;
+      });
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
       window.removeEventListener("scroll", handleScroll);

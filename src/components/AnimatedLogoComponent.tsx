@@ -7,17 +7,16 @@ const AnimatedLogoComponent = () => {
   const [X, setX] = useState(30);
 
   useEffect(() => {
-    if (X !== 0) {
-      setTimeout(() => {
-        setX(X / 1.1);
-      }, 5);
-    }
-  });
+    const id = requestAnimationFrame(() => setX(0));
+    return () => cancelAnimationFrame(id);
+  }, []);
+
+  const transition = "left 0.7s ease-out";
 
   return (
     <div className="relative">
-      <img className="absolute" style={{ left: X }} src={Culture} alt="" />
-      <img className="absolute" src={Multure} alt="" style={{ left: -X }} />
+      <img className="absolute" style={{ left: X, transition }} src={Culture} alt="" />
+      <img className="absolute" src={Multure} alt="" style={{ left: -X, transition }} />
       <img src={Loft} alt="" />
     </div>
   );
